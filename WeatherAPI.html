@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="WeatherAPI.css">
+        <title>My Weather</title>
+
+    </head>
+    <body>
+        <div class="top-container">
+            <h1>MY WEATHER</h1>
+            <div class="search-container">
+                <input type="text" id="city-input" placeholder="Enter city">
+                <img src="Logo/search-logo.png" alt="search" id="search-btn">
+            </div>
+        </div>
+        <div class="mid-container">
+            <a class="today-container"
+                id="today-container-nav">Today</a>
+            <a class="five-day-forecast-container"
+                id="five-day-forecast-container-nav">5-day forecast</a>
+
+        </div>
+        <div class="bottom-container">
+            <div class="today-info-container">
+
+                <div class="current-weather-container"
+                    id="current-weather-container">
+
+                    <div class="current-weather-title">
+                        <h3>CURRENT WEATHER</h3>
+                        <h3 id="current-weather-title-date">30.06.2018</h3>
+                    </div>
+
+                    <div class="current-weather-info">
+                        <div class="current-weather-options">
+                            <img src="Logo/sunny-logo.png"
+                                id="current-weather-icon"
+                                alt="cloudy">
+                            <p id="current-weather-info-title">Sunny</p>
+                        </div>
+                        <div class="current-weather-celcious">
+                            <h1 id="current-weather-celcious-title">29°C</h1>
+                            <p id="current-weather-real-feel-title">Real Feel
+                                30°</p>
+                        </div>
+                        <div class="three-weather-time">
+                            <p id="weather-sunrise">Sunrise: 7:04 AM</p>
+                            <p id="weather-sunset">Sunset: 5:11 PM</p>
+                            <p id="weather-duration">Duration: 10:07 hr</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="five-day-broadcast-container"
+                    id="five-day-broadcast-container">
+
+                    <div class="tonight-today-forecast">
+                        <h3>TONIGHT</h3>
+                        <h4>JUN 30</h4>
+                        <img src="Logo/sunny-logo.png" alt="cloudy">
+                        <h1>25°C</h1>
+                        <h3>Clear, Warm</h3>
+                    </div>
+                    <div class="today-forecast">
+                        <h3>SUN</h3>
+                        <h4>JUL 01</h4>
+                        <img src="Logo/sunny-logo.png" alt="cloudy">
+                        <h1>40°C</h1>
+                        <h3>Clear, Warm</h3>
+                    </div>
+                    <div class="tomorrow-forecast">
+                        <h3>MON</h3>
+                        <h4>JUL 02</h4>
+                        <img src="Logo/sunny-logo.png" alt="cloudy">
+                        <h1>35°C</h1>
+                        <h3>Clear, Warm</h3>
+                    </div>
+                    <div class="two-days-from-today-forecast">
+                        <h3>TUE</h3>
+                        <h4>JUL 03</h4>
+                        <img src="Logo/sunny-logo.png" alt="cloudy">
+                        <h1>38°C</h1>
+                        <h3>Clear, Warm</h3>
+                    </div>
+                    <div class="three-days-from-today-forecast">
+                        <h3>WED</h3>
+                        <h4>JUL 04</h4>
+                        <img src="Logo/sunny-logo.png" alt="cloudy">
+                        <h1>36°C</h1>
+                        <h3>Clear, Warm</h3>
+                    </div>
+
+                </div>
+                <div class="hourly-container"
+                    id="hourly-container">
+                    <div class="hourly-title">
+                        <h3>HOURLY</h3>
+                    </div>
+                    <table id="hourly-container-table">
+                        <tr>
+                            <th>TODAY</th>
+                            <th>7pm</th>
+                            <th>8pm</th>
+                            <th>9pm</th>
+                            <th>10pm</th>
+                            <th>11pm</th>
+                            <th>12pm</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><img src="Logo/sunny-logo.png"
+                                    alt="seven-pm"></td>
+                            <td><img src="Logo/sunny-logo.png"
+                                    alt="eight-pm"></td>
+                            <td><img src="Logo/half-moon-logo.png"
+                                    alt="nine-pm"></td>
+                            <td><img src="Logo/half-moon-logo.png"
+                                    alt="ten-pm"></td>
+                            <td><img src="Logo/half-moon-logo.png"
+                                    alt="eleven-pm"></td>
+                            <td><img src="Logo/half-moon-logo.png"
+                                    alt="twelve-pm"></td>
+                        </tr>
+                        <tr>
+                            <td>Forecast</td>
+                            <td>Sunny</td>
+                            <td>Sunny</td>
+                            <td>Clear</td>
+                            <td>Clear</td>
+                            <td>Clear</td>
+                            <td>Clear</td>
+                        </tr>
+                        <tr>
+                            <td>Temp °C</td>
+                            <td>29°</td>
+                            <td>28°</td>
+                            <td>28°</td>
+                            <td>27°</td>
+                            <td>27°</td>
+                            <td>27°</td>
+                        </tr>
+                        <tr>
+                            <td>RealFeel</td>
+                            <td>28°</td>
+                            <td>27°</td>
+                            <td>28°</td>
+                            <td>27°</td>
+                            <td>27°</td>
+                            <td>26°</td>
+                        </tr>
+                        <tr>
+                            <td>Wind (km/h)</td>
+                            <td>11 ESE</td>
+                            <td>9 ESE</td>
+                            <td>6 ES</td>
+                            <td>6 ESE</td>
+                            <td>6 ESE</td>
+                            <td>7 ES</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="nearby-places-container"
+                    id="nearby-places-container">
+                    <div class="nearby-places-container-title">
+                        <h3>NEARBY PLACES</h3>
+                    </div>
+                    <div class="nearby-places-lists"
+                        id="nearby-places-lists">
+                        <div class="nearby-places-groups-1">
+
+                            <div class="nearby-places-group-1"
+                                id="nearby-places-group-1">
+                                <h4>Baladzhary</h4>
+                                <img src="Logo/sunny-logo.png" alt="sunny">
+                                <h4>36°C</h4>
+                            </div>
+
+                            <div class="nearby-places-group-2"
+                                id="nearby-places-group-2">
+                                <h4>Badamdar</h4>
+                                <img src="Logo/sunny-logo.png" alt="sunny">
+                                <h4>36°C</h4>
+
+                            </div>
+
+                        </div>
+                        <div class="nearby-places-groups-2">
+                            <div class="nearby-places-group-3"
+                                id="nearby-places-group-3">
+                                <h4>Bailov</h4>
+                                <img src="Logo/sunny-logo.png" alt="sunny">
+                                <h4>29°C</h4>
+
+                            </div>
+                            <div class="nearby-places-group-4"
+                                id="nearby-places-group-4">
+                                <h4>Cherni Gorod</h4>
+                                <img src="Logo/sunny-logo.png" alt="sunny">
+                                <h4>29°C</h4>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="city-not-found-page-container"
+                id="city-not-found-page-container">
+                <img src="Logo/error-404.png" alt="404">
+                <h2>Could not be found.</h2>
+                <h2>Please enter a different location.</h2>
+            </div>
+        </div>
+
+        <script src="WeatherAPI.js"> </script>
+
+    </body>
+
+</html>
